@@ -1,0 +1,35 @@
+<section class="section">
+  <div class="container" *ngIf="profile">
+    <app-section-header title="About Me" subtitle="A brief introduction to my background and expertise"></app-section-header>
+    
+    <div class="row layout-row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-card glass-card p-4 p-lg-5">
+          <p class="lead text-primary mb-3 fw-bold">Who am I?</p>
+          <p class="mb-4">{{ profile.summary }}</p>
+          <div class="contact-inline d-flex flex-column gap-2 mt-4">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-geo-alt text-primary me-3 fs-5"></i>
+              <span>{{ profile.location }}</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-envelope text-primary me-3 fs-5"></i>
+              <span>{{ profile.email }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="stats-grid">
+          @for (stat of profile.stats; track stat.label) {
+            <div class="stat-card glass-card text-center p-4">
+              <h3 class="display-4 fw-bolder text-gradient mb-2">{{ stat.value }}</h3>
+              <p class="text-secondary fw-medium mb-0">{{ stat.label }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

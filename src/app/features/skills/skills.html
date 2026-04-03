@@ -1,0 +1,26 @@
+<section class="section position-relative">
+  <div class="container">
+    <app-section-header title="Tech Arsenal" subtitle="Technologies and practices I use to build robust applications"></app-section-header>
+    
+    <div class="row g-4 mt-2">
+      @for (category of skillCategories; track category.category; let i = $index) {
+        <div class="col-md-6 col-lg-4" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+          <div class="skill-category-card glass-card h-100 p-4">
+            <div class="category-header d-flex align-items-center mb-4">
+              <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i [class]="'bi ' + category.icon + ' fs-4'"></i>
+              </div>
+              <h3 class="h5 mb-0 fw-bold">{{ category.category }}</h3>
+            </div>
+            
+            <div class="d-flex flex-wrap gap-2">
+              @for (skill of category.skills; track skill) {
+                <span class="skill-pill">{{ skill }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

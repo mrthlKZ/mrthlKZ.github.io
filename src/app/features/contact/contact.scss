@@ -1,0 +1,47 @@
+@import '../../../styles/variables';
+
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(var(--accent-primary-rgb), 0.1) 0%, transparent 60%);
+    z-index: 0;
+  }
+  
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: var(--accent-primary);
+    color: #fff;
+    transform: translateY(-5px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 20px rgba(var(--accent-primary-rgb), 0.3);
+  }
+}
+
+[data-theme='light'] .social-icon {
+  background: rgba(0, 0, 0, 0.03);
+}

@@ -1,0 +1,13 @@
+<section class="section">
+  <div class="container">
+    <app-section-header title="Key Projects" subtitle="Case studies of enterprise applications I've built"></app-section-header>
+    
+    <div class="row g-4 mt-4">
+      @for (project of projects; track project.title; let i = $index) {
+        <div class="col-md-6 col-xl-4" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="(i % 3) * 100">
+          <app-project-card [project]="project"></app-project-card>
+        </div>
+      }
+    </div>
+  </div>
+</section>

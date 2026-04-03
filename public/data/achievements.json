@@ -1,0 +1,22 @@
+[
+  {
+    "title": "AI Transitioning Award",
+    "description": "Awarded for demonstrating adaptability and contribution toward AI-enabled development practices and modern engineering workflows.",
+    "category": "Award"
+  },
+  {
+    "title": "Best Employee of the Month",
+    "description": "Recognized for strong adaptability, collaboration, and team contribution.",
+    "category": "Recognition"
+  },
+  {
+    "title": "Delivery of 9+ Enterprise Projects",
+    "description": "Contributed to the successful delivery of 9+ enterprise software projects across multiple business domains.",
+    "category": "Milestone"
+  },
+  {
+    "title": "Micro-Project Architecture Adoption",
+    "description": "Played a key role in improving product maintainability through modular micro-project architecture adoption.",
+    "category": "Innovation"
+  }
+]

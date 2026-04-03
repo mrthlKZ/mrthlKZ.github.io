@@ -1,0 +1,11 @@
+npx ng g c core/layout/header --skip-tests
+npx ng g c core/layout/footer --skip-tests
+npx ng g c shared/components/section-header --skip-tests
+npx ng g c features/hero --skip-tests
+npx ng g c features/about --skip-tests
+npx ng g c features/skills --skip-tests
+npx ng g c features/experience --skip-tests
+npx ng g c features/projects --skip-tests
+npx ng g c features/achievements --skip-tests
+npx ng g c features/education --skip-tests
+npx ng g c features/contact --skip-tests

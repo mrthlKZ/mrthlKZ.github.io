@@ -1,0 +1,42 @@
+[
+  {
+    "title": "PetroHSE Software Suite",
+    "stack": ["Angular", "TypeScript", ".NET / .NET Core", "SQL", "Dapper", "REST APIs"],
+    "summary": "Led and contributed to the development of modules, workflows, and feature enhancements for an enterprise Health, Safety, and Environment (HSE) platform.",
+    "contributions": "Built UI screens, reusable components, API integrations, and workflow-driven functionality.",
+    "impact": "Integrated IVMS API for real-time vehicle tracking and deviation alerts, contributing to a 20% improvement in operational efficiency.",
+    "tags": ["Enterprise", "HSE"]
+  },
+  {
+    "title": "Management of Change",
+    "stack": ["Angular", ".NET", "SQL"],
+    "summary": "Designed and developed a workflow-based application for PDO to manage change requests.",
+    "contributions": "Built user-facing forms, workflows, and document attachment features.",
+    "impact": "Improvied user efficiency by 25%.",
+    "tags": ["Workflow", "PDO"]
+  },
+  {
+    "title": "DigLogist",
+    "stack": ["Angular", ".NET", "SQL"],
+    "summary": "Developed a logistics management solution to automate and streamline delivery operations.",
+    "contributions": "Developed full stack features for logistics management.",
+    "impact": "Improving delivery efficiency by 20%.",
+    "tags": ["Logistics", "Automation"]
+  },
+  {
+    "title": "Risk Assessment Tool",
+    "stack": ["Angular", ".NET", "SQL"],
+    "summary": "Built a web-based tool for identifying and assessing organizational risks.",
+    "contributions": "Developed UI and backend integrations for risk logging.",
+    "impact": "Contributing to a 25% reduction in risk incidents.",
+    "tags": ["Risk Management", "Analysis"]
+  },
+  {
+    "title": "MASDAR",
+    "stack": ["Angular", ".NET", "SQL"],
+    "summary": "Redeveloped subsurface data management interfaces for PDO.",
+    "contributions": "Rebuilt legacy interfaces with modern stack components.",
+    "impact": "Improving data retrieval efficiency by 30%.",
+    "tags": ["Data Management", "Performance"]
+  }
+]

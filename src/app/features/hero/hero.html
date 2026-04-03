@@ -1,0 +1,61 @@
+<section class="hero-section d-flex align-items-center">
+  <div class="hero-background"></div>
+  
+  <div class="container position-relative z-1">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-8" *ngIf="profile">
+        <div class="hero-content" data-aos="fade-up">
+          <p class="greeting text-gradient fw-bold mb-2">Hello, I'm</p>
+          <h1 class="display-2 fw-bolder mb-3">{{ profile.name }}</h1>
+          
+          <h2 class="role-wrapper mb-4 h3 text-secondary">
+            <span class="static-text">{{ profile.title }}</span>
+            <span class="d-block d-md-inline ms-md-2 separator d-none d-md-inline-block">|</span>
+            <span class="dynamic-text text-primary ms-md-2 d-block d-md-inline mt-2 mt-md-0 fw-bold">
+              {{ currentTag }}<span class="cursor">|</span>
+            </span>
+          </h2>
+          
+          <p class="summary-text lead mb-5 max-w-75">
+            {{ profile.summary | slice:0:150 }}...
+          </p>
+          
+          <div class="cta-group d-flex flex-wrap gap-3">
+            <button class="btn btn-primary btn-glow px-4 py-2 fw-medium rounded-pill" (click)="scrollToProjects()">
+              View Projects <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+            <button class="btn btn-outline-light btn-glass px-4 py-2 fw-medium rounded-pill" (click)="downloadResume()">
+              <i class="bi bi-download me-2"></i> Download Resume
+            </button>
+          </div>
+          
+          <div class="social-links mt-5 d-flex gap-4">
+            <a [href]="'mailto:' + profile.email" class="social-icon" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a [href]="'https://' + profile.linkedin" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+          <div class="abstract-shape">
+            <div class="glow-ring"></div>
+            <div class="glow-ring delay-1"></div>
+            <div class="glow-ring delay-2"></div>
+            <i class="bi bi-braces text-primary central-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="scroll-indicator" (click)="scrollToProjects()">
+    <span class="mouse">
+      <span class="wheel"></span>
+    </span>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+[
+  {
+    "company": "Petrolnfotech Private Limited",
+    "role": "Senior Software Engineer",
+    "duration": "Feb 2021 – Present",
+    "location": "India",
+    "responsibilities": [
+      "Design, develop, and maintain enterprise web applications using Angular, TypeScript, .NET / .NET Core, SQL, Dapper, and REST APIs.",
+      "Build and enhance UI screens, reusable components, and workflow-driven modules based on business requirements.",
+      "Develop and integrate backend APIs to support workflows, business logic, and application features.",
+      "Implement Reactive Forms, RxJS-based data handling, authentication/authorization flows, and role-based access controls.",
+      "Perform API integration between frontend and backend systems to ensure seamless functionality and reliable data flow.",
+      "Work with SQL, Dapper, and stored procedures for application-level data operations and backend support.",
+      "Contribute to unit testing, bug fixing, debugging, and code reviews to improve software quality and maintainability.",
+      "Collaborate in Agile/Scrum environments using Git and Jira."
+    ],
+    "highlights": [
+      "Delivered and contributed to 9+ software projects across HSE, logistics, HR, healthcare, and engineering domains.",
+      "Contributed to the PetroHSE Software Suite, improving operational efficiency by 20%.",
+      "Played a key role in transforming a monolithic application into modular micro-projects, improving maintainability and deployment flexibility.",
+      "Improved data retrieval efficiency by 30% in a subsurface management project through interface redevelopment and optimization.",
+      "Recognized for strong adaptability, collaboration, and team contribution through multiple internal recognitions."
+    ]
+  },
+  {
+    "company": "Sanesquare Technologies Pvt. Ltd.",
+    "role": "Associate Software Engineer",
+    "duration": "Jun 2020 – Feb 2021",
+    "location": "India",
+    "responsibilities": [
+      "Developed and maintained web application features with a focus on performance, usability, and maintainability.",
+      "Built and enhanced frontend application components and supported backend functionality as part of full-stack feature delivery.",
+      "Conducted unit testing for new features, contributing to a 40% reduction in post-release defects.",
+      "Supported feature development, issue resolution, and application enhancement across the software development lifecycle."
+    ],
+    "highlights": [
+      "Improved software performance by 25% through code optimization and efficient resource handling."
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg fixed-top" [class.scrolled]="isScrolled">
+  <div class="container">
+    <a class="navbar-brand text-gradient fw-bold" href="#" (click)="scrollToSection('hero'); $event.preventDefault()">MKS.</a>
+    
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        @for (link of navLinks; track link.id) {
+          <li class="nav-item">
+            <a class="nav-link fw-medium" 
+               [class.active]="activeSection === link.id"
+               href="#{{link.id}}" 
+               (click)="scrollToSection(link.id); $event.preventDefault()">
+              {{ link.name }}
+            </a>
+          </li>
+        }
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0 d-flex align-items-center">
+          <button class="theme-toggle" (click)="toggleTheme()" aria-label="Toggle theme">
+            @if (isDarkTheme) {
+              <i class="bi bi-sun-fill text-warning"></i>
+            } @else {
+              <i class="bi bi-moon-stars-fill text-primary"></i>
+            }
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

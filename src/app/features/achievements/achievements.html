@@ -1,0 +1,23 @@
+<section class="section bg-secondary bg-opacity-10">
+  <div class="container">
+    <app-section-header title="Achievements" subtitle="Recognitions and major milestones"></app-section-header>
+    
+    <div class="row g-4 mt-2 justify-content-center">
+      @for (achievement of achievements; track achievement.title; let i = $index) {
+        <div class="col-md-6 col-lg-5" [attr.data-aos]="'zoom-in'" [attr.data-aos-delay]="i * 100">
+          <div class="achievement-card text-center p-4 p-md-5 h-100 position-relative">
+            <div class="icon-hexagon mx-auto mb-4">
+              <i class="bi bi-trophy-fill text-white fs-3"></i>
+            </div>
+            
+            <span class="badge bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2 rounded-pill border border-primary border-opacity-25">{{ achievement.category }}</span>
+            
+            <h3 class="h5 fw-bold mb-3">{{ achievement.title }}</h3>
+            
+            <p class="text-secondary mb-0">{{ achievement.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
