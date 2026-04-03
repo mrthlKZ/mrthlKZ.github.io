@@ -1,0 +1,17 @@
+Correct way to update your portfolio
+
+Every time you make changes:
+
+Step 1 — Commit your changes
+git add .
+git commit -m "Updated portfolio"
+git push
+
+Step 2 — Rebuild + redeploy
+If using user site:
+ng build --base-href /
+npx angular-cli-ghpages --dir=dist/YOUR_APP_NAME/browser
+
+If using project site:
+ng build --base-href /repo-name/
+npx angular-cli-ghpages --dir=dist/YOUR_APP_NAME/browser
