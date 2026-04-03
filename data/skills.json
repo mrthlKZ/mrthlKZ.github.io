@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Frontend",
+    "icon": "bi-window-sidebar",
+    "skills": ["Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Bootstrap", "Kendo UI", "RxJS", "Reactive Forms", "Responsive Web Design", "Reusable Components"]
+  },
+  {
+    "category": "Backend",
+    "icon": "bi-hdd-network",
+    "skills": [".NET", ".NET Core", "MVC", "REST APIs", "REST Web Services", "Authentication & Authorization", "Role-Based Access Control"]
+  },
+  {
+    "category": "Database",
+    "icon": "bi-database",
+    "skills": ["SQL", "Dapper", "Stored Procedures", "CRUD Operations", "Basic Joins", "Filtering", "Data Handling"]
+  },
+  {
+    "category": "Tools & Practices",
+    "icon": "bi-tools",
+    "skills": ["Git", "Jira", "Agile / Scrum", "Unit Testing", "Code Reviews", "Debugging", "API Integration", "SDLC"]
+  },
+  {
+    "category": "Architecture & Delivery",
+    "icon": "bi-boxes",
+    "skills": ["Modular Development", "Micro-Project Architecture", "Workflow-Based Applications", "Cross-Functional Collaboration"]
+  }
+]
