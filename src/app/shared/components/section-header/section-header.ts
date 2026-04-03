@@ -9,15 +9,11 @@ import { Component, Input } from '@angular/core';
         <span class="text-gradient">{{ title }}</span>
       </h2>
       @if (subtitle) {
-        <p class="section-subtitle lead mx-auto mt-3">{{ subtitle }}</p>
+        <p class="section-subtitle lead mx-auto">{{ subtitle }}</p>
       }
     </div>
   `,
   styles: [`
-    .section-subtitle {
-      max-width: 600px;
-      color: var(--text-secondary);
-    }
   `]
 })
 export class SectionHeaderComponent {

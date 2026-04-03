@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   color: var(--text-primary);
@@ -13,6 +18,7 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
+
   span.highlight {
     color: var(--accent-primary);
   }
@@ -21,7 +27,7 @@ h2 {
 p {
   color: var(--text-secondary);
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .text-gradient {
@@ -38,7 +44,7 @@ p {
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -49,4 +55,10 @@ p {
     background: var(--accent-primary);
     border-radius: 2px;
   }
+}
+
+.section-subtitle {
+  max-width: 600px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
 }

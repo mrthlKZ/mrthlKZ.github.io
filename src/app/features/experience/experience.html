@@ -1,40 +1,42 @@
 <section class="section">
   <div class="container">
-    <app-section-header title="Professional Journey" subtitle="My enterprise software development experience"></app-section-header>
-    
+    <app-section-header title="Professional Journey"
+      subtitle="My enterprise software development experience"></app-section-header>
+
     <div class="timeline mt-5">
       @for (exp of experiences; track exp.company; let i = $index) {
-        <div class="timeline-item" [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content glass-card p-4 p-md-5">
-            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-              <h3 class="h4 fw-bold text-gradient mb-0">{{ exp.role }}</h3>
-              <span class="badge bg-primary bg-opacity-10 text-primary border border-primary fw-medium px-3 py-2 rounded-pill mt-2 mt-md-0">
-                {{ exp.duration }}
-              </span>
-            </div>
-            
-            <h4 class="h5 mb-4 text-secondary"><i class="bi bi-building me-2"></i>{{ exp.company }}</h4>
-            
-            <div class="experience-details">
-              <p class="fw-bold mb-2">Key Responsibilities:</p>
-              <ul class="custom-list mb-4">
-                @for (resp of exp.responsibilities; track resp) {
-                  <li>{{ resp }}</li>
+      <div class="timeline-item" [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content glass-card p-4 p-md-5">
+          <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+            <h3 class="h4 fw-bold text-gradient mb-0">{{ exp.role }}</h3>
+            <span
+              class="badge bg-primary bg-opacity-10 text-primary border border-primary fw-medium px-3 py-2 rounded-pill mt-2 mt-md-0">
+              {{ exp.duration }}
+            </span>
+          </div>
+
+          <h4 class="h5 mb-4 text-secondary"><i class="bi bi-building me-2"></i>{{ exp.company }}</h4>
+
+          <div class="experience-details">
+            <p class="fw-bold mb-2">Key Responsibilities:</p>
+            <ul class="custom-list mb-4">
+              @for (resp of exp.responsibilities; track resp) {
+              <li class="key-resp-item">{{ resp }}</li>
+              }
+            </ul>
+
+            <div class="highlights-box p-3 rounded-3 border border-secondary border-opacity-25">
+              <p class="fw-bold text-primary mb-2"><i class="bi bi-star-fill me-2 text-warning"></i>Key Highlights:</p>
+              <ul class="custom-list highlights-list mb-0">
+                @for (highlight of exp.highlights; track highlight) {
+                <li class="highlight-item">{{ highlight }}</li>
                 }
               </ul>
-              
-              <div class="highlights-box p-3 rounded-3 border border-secondary border-opacity-25">
-                <p class="fw-bold text-primary mb-2"><i class="bi bi-star-fill me-2 text-warning"></i>Key Highlights:</p>
-                <ul class="custom-list highlights-list mb-0">
-                  @for (highlight of exp.highlights; track highlight) {
-                    <li>{{ highlight }}</li>
-                  }
-                </ul>
-              </div>
             </div>
           </div>
         </div>
+      </div>
       }
     </div>
   </div>
