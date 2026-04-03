@@ -7,10 +7,25 @@
   "phone": "+91 9061356316",
   "linkedin": "https://linkedin.com/in/mruthul-k-s-6a75a11a9",
   "summary": "Results-driven Senior Software Engineer with 5+ years of experience in developing and maintaining enterprise web applications using Angular, TypeScript, JavaScript, .NET / .NET Core, SQL, HTML, CSS, SCSS, Bootstrap, and REST APIs. Experienced in both frontend and backend development, with hands-on expertise in UI development, API integration, backend API development, unit testing, bug fixing, and code reviews. Strong background in building workflow-driven business applications using RxJS, Reactive Forms, reusable components, authentication/authorization, role-based access, Dapper, and stored procedures. Proven ability to deliver scalable solutions across HSE, logistics, HR, healthcare, and engineering domains.",
-  "heroTags": ["Angular Developer", "Full Stack Engineer", "Enterprise App Builder", "UI + API Developer"],
+  "summaryShort": "Results-driven Senior Software Engineer with 5+ years of experience delivering scalable enterprise applications across multiple domains using Angular, .NET, and modern web technologies, with strong expertise in full-stack development, API integration, and workflow-driven solutions.",
+  "heroTags": [
+    "Angular Developer",
+    "Full Stack Engineer",
+    "Enterprise App Builder",
+    "UI + API Developer"
+  ],
   "stats": [
-    { "label": "Years Experience", "value": "5+" },
-    { "label": "Enterprise Projects", "value": "9+" },
-    { "label": "Domains", "value": "HSE, Logistics, HR..." }
+    {
+      "label": "Years Experience",
+      "value": "5+"
+    },
+    {
+      "label": "Enterprise Projects",
+      "value": "9+"
+    },
+    {
+      "label": "Domains",
+      "value": "HSE, Logistics, HR..."
+    }
   ]
 }
