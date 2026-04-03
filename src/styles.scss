@@ -12,6 +12,11 @@
 @import './styles/typography';
 
 // Base Styles
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,7 +26,6 @@ body {
   color: var(--text-primary);
   font-family: var(--font-primary);
   transition: background-color 0.4s ease, color 0.4s ease;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 

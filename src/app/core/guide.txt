@@ -15,3 +15,6 @@ npx angular-cli-ghpages --dir=dist/YOUR_APP_NAME/browser
 If using project site:
 ng build --base-href /repo-name/
 npx angular-cli-ghpages --dir=dist/YOUR_APP_NAME/browser
+
+------------OR------------------
+Simply push and run: npm run deploy

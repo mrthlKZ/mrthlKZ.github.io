@@ -12,6 +12,7 @@ export interface Profile {
   phone: string;
   linkedin: string;
   summary: string;
+  summaryShort: string;
   heroTags: string[];
   stats: Stat[];
 }
