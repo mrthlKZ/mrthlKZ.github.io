@@ -87,10 +87,33 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.navbar-collapse.show {
-  @include glassmorphism;
-}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: block !important;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 1rem;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease, 
+                padding 0.4s ease,
+                visibility 0.4s ease;
+    
+    @include glassmorphism;
+    background: rgb(75 2 138 / 44%);
+    border-radius: 20px;
+    margin-top: 10px;
 
-:host-context([data-theme='light']) .navbar-collapse.show {
-  background: rgb(153 162 167 / 31%);
+    &.show {
+      max-height: 400px;
+      opacity: 1;
+      visibility: visible;
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  :host-context([data-theme='light']) .navbar-collapse {
+    background: rgb(179 177 178 / 53%);
+  }
 }
